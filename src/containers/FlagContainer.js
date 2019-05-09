@@ -4,11 +4,7 @@ import CountryFlagList from '../presentational/FlagList';
 import { getCountries, searchCountry, deleteCountry } from '../actions/countries';
 
 class CountryFlagContainer extends Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props);
-  }
-
+ 
   componentDidMount() {
     this.props.dispatch(getCountries());
     this.props.dispatch(searchCountry(''));

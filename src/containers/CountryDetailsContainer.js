@@ -4,10 +4,6 @@ import { getCountry } from '../actions/countries';
 import CountryDetails from '../presentational/CountryDetails';
 
 class CountryDetailsContainer extends Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props)
-  }
 
   componentDidMount() {
     this.props.dispatch(getCountry(this.props.params.id));

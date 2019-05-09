@@ -4,11 +4,7 @@ import { setContinent, deleteCountry } from '../actions/countries';
 import CountryFlagList from '../presentational/FlagList';
 
 class ContinentsContainer extends Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props)
-  }
-
+  
   chooseContinent(event) {
     this.props.dispatch(setContinent(event.target.value));
   }
