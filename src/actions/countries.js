@@ -27,7 +27,7 @@ export function deleteCountry(id) {
 export function searchCountry(searchText) {
   return {
     type: SEARCH_COUNTRY,
-    searchCountry
+    searchText
   }
 };
 
